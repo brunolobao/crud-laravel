@@ -1,6 +1,6 @@
-@extends('template.master')
+@extends('layouts.app')
 @section('titulo','Lista de pessoas')
-@section('conteudo')   
+@section('content')   
 
 
 

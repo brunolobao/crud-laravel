@@ -50,4 +50,8 @@ class PessoaController extends Controller
 
         return redirect('/pessoas');
     }
+    public function show(Pessoa $pessoa)
+    {
+        return view('pessoa.show', compact('pessoa'));
+    }       
 }

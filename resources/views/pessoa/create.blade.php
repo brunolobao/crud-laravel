@@ -1,3 +1,9 @@
+@extends('template.master')
+@section('titulo','formulario')
+@section('conteudo')
+    
+
+
 @if (isset($pessoa))
     <h1>Dados de {{ $pessoa->nome }}</h1>
     <form action="/pessoas/{{ $pessoa->id }}" method="post">
@@ -16,3 +22,4 @@
 <br>
 
 <a href="/pessoas">Voltar</a>
+@endsection
